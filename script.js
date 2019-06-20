@@ -10,15 +10,16 @@ const dogAPI = (() => {
     }
    
     async function getDogs() {
-        const userSelection = getUserSelection();
-        console.log(userSelection);
-
-        const response = await fetch(`https://dog.ceo/api/breed/${userSelection}/images/random`);
-        const dogData = await response.json();
-        
-        imgEl.src = dogData.message;
+        try {
+            const userSelection = getUserSelection();
+            const response = await fetch(`https://dog.ceo/api/breed/${userSelection}/images/random`);
+            const dogData = await response.json();
+            
+            imgEl.src = dogData.message;
+        } catch (err) {
+            console.error("Uh oh", err);
+        }
     }
-
     searchBtn.addEventListener("click", getDogs);
 
 })();
