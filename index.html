@@ -3,28 +3,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alex Curran">
         <link rel="stylesheet" href="./style.css">
-        <title>Dog API</title>
+        <title>Dog API Search</title>
     </head>
     <body>
-        <img src="./images/placeholder-dog.jpg" alt="Dog image">
-        <h2>Search for a dog by breed in the drop-down selection</h2>
-       
 
-        <select id="breed-select">
-            <option value="african">African Wild Dog</option>
-            <option value="airedale">Airedale</option>
-            <option value="akita">Akita</option>
-            <option value="appenzeller">Appenzeller</option>
-            <option value="basenji">Basenji</option>
-            <option value="beagle">Beagle</option>
-            <option value="bluetick">Bluetick</option>
-            <option value="borzoi">Borzoi</option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-
-        <button class="search-btn">Search</button>
+        <header>
+            <h1 class="title">Dogs As a Service</h1>
+            <nav>
+                <ul class="links-container">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Search Your Favorite Breed For a Random Image!</h2>
+            <div class="selection-container">
+                <select id="breed-select">
+                    <option value="african">African Wild Dog</option>
+                    <option value="airedale">Airedale</option>
+                    <option value="akita">Akita</option>
+                    <option value="appenzeller">Appenzeller</option>
+                    <option value="basenji">Basenji</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="malinois">Belgian Malinois</option>
+                    <option value="bluetick">Bluetick</option>
+                    <option value="borzoi">Borzoi</option>
+                    <option value="bouvier">Bouvier</option>
+                    <option value="boxer">Boxer</option>
+                    <option value="cairn">Cairn</option>
+                    <option value="chihuahua">Chihuahua</option>
+                    <option value="chow">Chow</option>
+                    <option value="cockapoo">Cockapoo</option>
+                    <option value="coonhound">Coonhound</option>
+                    <option value="cotondetulear">Cotondetulear</option>
+                    <option value="dachshund">Dachshund</option>
+                    <option value="dalmatian">Dalmatian</option>
+                    <option value="dingo">Dingo</option>
+                    <option value="doberman">Doberman Pinscher</option>
+                    <option value="germanshepherd">German Shepherd</option>
+                    <option value="husky">Husky</option>
+                    <option value="komondor">Komondor</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="leonberg">Leonberg</option>
+                    <option value="malamute">Malamute</option>
+                    <option value="mexicanhairless">Mexican Hairless</option>
+                    <option value="newfoundland">Newfoundland</option>
+                    <option value="papillon">Papillon</option>
+                    <option value="pekinese">Pekinese</option>
+                    <option value="pomeranian">Pomeranian</option>
+                    <option value="pug">Pug</option>
+                    <option value="puggle">Puggle</option>
+                    <option value="rottweiler">Rottweiler</option>
+                    <option value="saluki">Saluki</option>
+                    <option value="samoyed">Samoyed</option>
+                    <option value="shiba">Shiba Inu</option>
+                    <option value="shihtzu">Shihtzu</option>
+                    <option value="stbernard">St. Bernard</option>
+                    <option value="vizsla">Vizsla</option>
+                    <option value="weimaraner">Weimaraner</option>
+                    <option value="whippet">Whippet</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+            <figure class="dog-image-container">
+                <img class="dog-image" src="./images/placeholder-dog.jpg" alt="Dog image">
+            </figure>
+        </main>
+        <footer>
+            <ul class="footer-list">
+                <li><a href="https://dog.ceo/dog-api/about">Thanks to Dog CEO API</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </footer>
 
         <script src="./script.js"></script>
     </body>
