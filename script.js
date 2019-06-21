@@ -1,8 +1,7 @@
 const dogAPI = (() => {
-    const imgEl = document.querySelector("img");
+    const imgEl = document.querySelector(".dog-image");
     const breedSelectionEl = document.getElementById("breed-select");
     const searchBtn = document.querySelector(".search-btn");
-
     
     function getUserSelection() {
         const breedSelection = breedSelectionEl.options[breedSelectionEl.selectedIndex].value;
@@ -21,5 +20,4 @@ const dogAPI = (() => {
         }
     }
     searchBtn.addEventListener("click", getDogs);
-
 })();
