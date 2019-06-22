@@ -3,11 +3,11 @@ const dogAPI = (() => {
     const breedSelectionEl = document.getElementById("breed-select");
     const searchBtn = document.querySelector(".search-btn");
     
-    function getUserSelection() {
+    const getUserSelection = () => {
         const breedSelection = breedSelectionEl.options[breedSelectionEl.selectedIndex].value;
         return breedSelection;
     }
-   
+    
     async function getDogs() {
         try {
             const userSelection = getUserSelection();

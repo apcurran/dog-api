@@ -170,3 +170,27 @@ footer {
 .dog-image {
     width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .title-container .title {
+        font-size: 1.5rem;
+
+        margin-right: .75em;
+        margin-left: .5em;
+    }
+
+    .links-container .link-li {
+        margin: 0 .25em 0 .25em;
+    }
+
+    .title-container .logo {
+        width: 60px;
+    }
+
+    #nav-link-1,
+    #nav-link-2,
+    #nav-link-3 {
+        font-size: .8rem;
+    }
+
+}
